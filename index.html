@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Au Fil de la Plume - Biographe Familiale</title>
   <style>
-    /* Police Lavigne Display */
     @font-face {
       font-family: 'Lavigne Display';
       src: url('lavigne.ttf') format('truetype');
@@ -63,16 +62,16 @@
       background: var(--primary);
       display: flex;
       justify-content: center;
-      gap: 2rem;
-      padding: 0.8rem;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      padding: 0.8rem 1rem;
     }
 
     nav a {
       color: white;
       text-decoration: none;
-      font-size: 1.1rem;
-      text-transform: uppercase;
-      letter-spacing: 1px;
+      font-size: 1.05rem;
+      letter-spacing: 0.5px;
     }
 
     nav a:hover {
@@ -81,13 +80,13 @@
 
     .container {
       max-width: 900px;
-      margin: 3rem auto;
-      padding: 0 1.5rem;
+      margin: 2rem auto;
+      padding: 0 1.2rem;
     }
 
     section {
       background: var(--card-bg);
-      padding: 2.5rem;
+      padding: 2rem;
       margin-bottom: 2rem;
       border-radius: 6px;
       box-shadow: 0 4px 12px rgba(0,0,0,0.03);
@@ -96,7 +95,7 @@
 
     h2 {
       color: var(--primary);
-      font-size: 2.2rem;
+      font-size: 2rem;
       margin-bottom: 1rem;
       font-weight: normal;
     }
@@ -118,6 +117,7 @@
       margin-top: 1rem;
       font-size: 1.1rem;
       letter-spacing: 0.5px;
+      text-align: center;
     }
 
     .btn:hover {
@@ -126,11 +126,48 @@
 
     footer {
       text-align: center;
-      padding: 2rem;
+      padding: 2rem 1rem;
       color: #777;
       font-size: 0.9rem;
       background: #f4f0ea;
       margin-top: 3rem;
+    }
+
+    /* Styles spécifiques pour smartphones */
+    @media (max-width: 600px) {
+      header {
+        padding: 1.5rem 1rem;
+      }
+
+      .logo-img {
+        max-width: 170px;
+      }
+
+      nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.8rem;
+        padding: 1rem;
+      }
+
+      .container {
+        margin: 1rem auto;
+        padding: 0 0.8rem;
+      }
+
+      section {
+        padding: 1.25rem;
+        border-left-width: 3px;
+      }
+
+      h2 {
+        font-size: 1.6rem;
+      }
+
+      .btn {
+        display: block;
+        width: 100%;
+      }
     }
   </style>
 </head>
@@ -176,7 +213,7 @@
     </section>
 
     <section id="tarifs">
-      <h2>Tarifs & Modalités</h2>
+      <h2>Tarifs &amp; Modalités</h2>
       <div class="pricing-box">
         <p><strong>Taux horaire :</strong> 65 € / heure</p>
         <p style="margin-top: 0.5rem;"><strong>Biographie complète :</strong> Séances d'entretien de 2h en moyenne (6 à 10 entretiens nécessaires). Le paiement peut s’échelonner à la séance.</p>
