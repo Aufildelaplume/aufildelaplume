@@ -4,6 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Au Fil de la Plume - Biographe Familiale à Saint-Leu-la-Forêt (95320)</title>
+
+  <link rel="icon" type="image/jpeg" href="logo.jpg">
   
   <!-- Référencement SEO Local -->
   <meta name="description" content="Biographe familiale à Saint-Leu-la-Forêt (95320), Val-d'Oise et Île-de-France. Rédaction de récits de vie, mémoires et histoires de famille. Premier entretien gratuit.">
@@ -139,6 +141,24 @@
       font-weight: normal;
     }
 
+    .about-content {
+      display: flex;
+      gap: 2rem;
+      align-items: flex-start;
+    }
+
+    .about-text {
+      flex: 1;
+    }
+
+    .portrait-img {
+      width: 240px;
+      height: auto;
+      border-radius: 6px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      object-fit: cover;
+    }
+
     .pricing-box {
       background: #f8f6f0;
       padding: 1.5rem;
@@ -203,6 +223,17 @@
         font-size: 1.6rem;
       }
 
+      .about-content {
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 1.5rem;
+      }
+
+      .portrait-img {
+        width: 100%;
+        max-width: 280px;
+      }
+
       .btn {
         display: block;
         width: 100%;
@@ -263,8 +294,13 @@
 
     <section id="a-propos">
       <h2>Qui suis-je ?</h2>
-      <p>Titulaire d’un Master de Lettres Modernes et professeure de français depuis quinze ans, j’ai toujours écrit en parallèle, que ce soit pour mes grands-mères ou pour mes enfants. J’aime plus que tout le lien entre les générations et la transmission.</p>
-      <p style="margin-top: 1rem;">Un jour, ma grand-mère m’a demandé de l’accompagner dans l’écriture de ses souvenirs d’enfance. De ce travail ensemble est né <em>Le Vent en face</em>. Cette collaboration a fait germer l’idée de la biographie familiale, située au croisement de ce qui me passionne : l’amour des mots, la qualité d’écoute et l’intérêt pour les histoires de vie.</p>
+      <div class="about-content">
+        <div class="about-text">
+          <p>Titulaire d’un Master de Lettres Modernes et professeure de français depuis quinze ans, j’ai toujours écrit en parallèle, que ce soit pour mes grands-mères ou pour mes enfants. J’aime plus que tout le lien entre les générations et la transmission.</p>
+          <p style="margin-top: 1rem;">Un jour, ma grand-mère m’a demandé de l’accompagner dans l’écriture de ses souvenirs d’enfance. De ce travail ensemble est né <em>Le Vent en face</em>. Cette collaboration a fait germer l’idée de la biographie familiale, située au croisement de ce qui me passionne : l’amour des mots, la qualité d’écoute et l’intérêt pour les histoires de vie.</p>
+        </div>
+        <img src="portrait.jpg" alt="Biographe à l'écriture" class="portrait-img">
+      </div>
     </section>
 
   </div>
